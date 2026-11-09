@@ -19,21 +19,67 @@
         <fieldset class="champ">
           <legend>Votre atelier</legend>
           <!-- Insérer ici les clones de template-atelier pour les ateliers disponibles. -->
-          <div id="liste-ateliers" class="choix"></div>
+          <div id="liste-ateliers" class="choix">
+
+      <!-- <label class="carte-choix">
+        <input
+          type="radio"
+          name="atelier"
+          value=""
+          required
+          aria-describedby="erreur-atelier"
+        />
+        <span>
+          <strong class="atelier-titre">fezfez</strong>
+          <span class="atelier-places detail">fzefez</span>
+        </span>
+      </label> -->
+
+          </div>
           <p id="erreur-atelier" class="erreur" aria-live="polite"></p>
         </fieldset>
 
         <fieldset class="champ">
           <legend>Mode de participation</legend>
           <!-- Insérer ici les clones de template-mode. -->
-          <div id="liste-modes" class="choix choix-grille"></div>
+          <div id="liste-modes" class="choix choix-grille">
+
+
+            <!-- <label class="carte-choix">
+        <input
+          type="radio"
+          name="mode"
+          value=""
+          required
+          aria-describedby="erreur-mode"
+        />
+        <span class="mode-libelle">fez</span>
+      </label> -->
+
+          </div>
           <p id="erreur-mode" class="erreur" aria-live="polite"></p>
         </fieldset>
 
-        <fieldset id="champ-campus" class="champ" hidden disabled>
+        <fieldset id="champ-campus" class="champ" hidden hidden>
           <legend>Votre campus</legend>
-          <!-- Insérer ici les clones de template-campus. Activer ce fieldset en présentiel. -->
-          <div id="liste-campus" class="choix choix-grille"></div>
+          <!--     hidden visibe     s Insérer ici les clones de template-campus. Activer ce fieldset en présentiel. -->
+          <div id="liste-campus" class="choix choix-grille">
+
+            
+            <!-- <label class="carte-choix">
+        <input
+          type="radio"
+          name="campus"
+          value=""
+          required
+          aria-describedby="erreur-campus"
+        />
+        <span class="campus-libelle">YYY</span>
+      </label> -->
+
+
+
+          </div>
           <p id="erreur-campus" class="erreur" aria-live="polite"></p>
         </fieldset>
 
@@ -45,13 +91,12 @@
             type="email"
             autocomplete="email"
             placeholder="exemple@domaine.com"
-            disabled
             aria-describedby="erreur-email"
           />
           <p id="erreur-email" class="erreur" aria-live="polite"></p>
         </div>
 
-        <button type="submit">Confirmer mon inscription</button>
+        <button type="submit" id="submit-button">Confirmer mon inscription</button>
       </form>
 
       <section id="recapitulatif" aria-labelledby="titre-recapitulatif" hidden>
